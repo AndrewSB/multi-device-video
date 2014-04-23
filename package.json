@@ -1,0 +1,15 @@
+{
+  "name": "multi-device-video",
+  "version": "0.0.1",
+  "description": "hello-world",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "andrew-breckenridge",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.0.0",
+    "logfmt": "^1.1.2"
+  }
+}
