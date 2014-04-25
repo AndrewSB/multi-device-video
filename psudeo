@@ -1,0 +1,7 @@
+create server that can choose video and getDimensions() (that means it needs a window in the DOM)
+
+create 'clients' that dont choose videos but just create a connection to a server; the server would then send a signal saying 'start' and the getDimensions would optimize a rectangle from the chosen video JSON
+
+Then, it'll show a little window with a layout guide
+
+Then once every user hits the button, saying 'start', it'll play
