@@ -1,13 +1,10 @@
 {
   "name": "multi-device-video",
   "version": "0.0.1",
-  "description": "hello-world", 
   "private": true,
   "scripts": {
-        "start": "node ./bin/www"
-    },
-  "author": "andrew-breckenridge",
-  "license": "MIT",
+    "start": "node ./bin/www"
+  },
   "dependencies": {
     "express": "~4.0.0",
     "static-favicon": "~1.0.0",
@@ -18,5 +15,5 @@
     "jade": "~1.3.0",
     "mongodb": "*",
     "monk": "*"
-    }
+  }
 }
