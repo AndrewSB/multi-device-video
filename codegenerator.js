@@ -7,7 +7,7 @@ module.exports = {
     var cipher = "";
     var bank = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-    for( var i=0; i < 3; i++ )
+    for(var i = 0; i < 3; i++)
         cipher += bank.charAt(Math.floor(Math.random() * bank.length));
 
     return cipher;
