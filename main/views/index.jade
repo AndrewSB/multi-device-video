@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title} \n here ya would getDimensions
+	h1 multi-device-video
+	button#new-session Create new session
+	p  Or join one
+	input#sessionID(type='text', name='name')
