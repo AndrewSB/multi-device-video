@@ -10,6 +10,7 @@ var rectangleOptimize = require("./rectangleOptimize.js");
 var codeGenerator = require("./codegenerator.js");
 
 
+
 app.use(logfmt.requestLogger());
 
 app.get('/', function(req, res) {
@@ -23,4 +24,5 @@ app.listen(port, function() {
     console.log("Listening on " + port);
     var sessionID = codeGenerator.getCode();
     console.log(sessionID);
+
 });
