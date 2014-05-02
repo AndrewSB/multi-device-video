@@ -56,7 +56,7 @@ function RoomController($scope) {
         alert("dimensions are " + height + "x" + width);
     }
     function createRoom(roomName, videoID) {
-        alert(String(roomName));
+        socket.join(String(roomName));
         //socket.join(roomName);
     }
         
