@@ -1,0 +1,27 @@
+<html id="html">
+    <script src="/js/client.js"></script>
+    <script>
+        var url = String(window.location);
+        var patt = new RegExp("v=.*");
+        var regexMatch = patt.exec(url);
+        url = String(regexMatch).substring(2);
+        var id = url;
+        //this is onloaded
+        onloaded(id);
+    </script>
+    <script>
+        $(function() {
+            $('#video').css({
+                width: $(window).innerWidth() + 'px',
+                height: $(window).innerHeight() + 'px'
+            });
+            $(window).resize(function() {
+                $('#video').css({
+                    width: $(window).innerWidth() + 'px',
+                    height: $(window).innerHeight() + 'px'
+                });
+            });
+        });
+    </script>
+
+</html>

@@ -60,8 +60,12 @@ function RoomController($scope) {
     }
     
     function joinRoom(){
-        //TODO refresh page/redirect
-        var location = window.location+"?v="+video_id;
-        window.location = location;
+        window.location = "https://socketio-c9-wh116.c9.io/blank.html?v=" + video_id;
     }
     
+    function onloaded(id){
+        var html = "<iframe width="+screen.width+" height=" + screen.height + " id=\"video\" src=\"//www.youtube.com/embed/" + id + "?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>";
+        document.getElementById("html").innerHTML = html;
+        
+        
+    }
